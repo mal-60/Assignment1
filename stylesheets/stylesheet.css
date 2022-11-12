@@ -1,10 +1,14 @@
 body {
-    background-color: #F9F3EC;
+    background-color: #F8E9D7;
 }
 header {
     font-family: 'Montserrat', sans-serif;
     color: #4B7171;
     text-align: center;
+}
+div {
+    display: grid;
+    text-align: right;
 }
 .dark-theme {
     border: 0;
@@ -42,6 +46,10 @@ header {
 
 aside {
     display: flex;
-    flex: 1fr 2fr;
-    background-color: aquamarine;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    font-family: 'Montserrat', sans-serif;
+    color: #4B7171;
+    background-color: #F9F3EC;
 }
