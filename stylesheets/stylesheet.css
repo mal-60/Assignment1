@@ -1,0 +1,13 @@
+body {
+    background-color: #F9F3EC;
+}
+header {
+    font-family: 'Montserrat', sans-serif;
+    color: #4B7171;
+    text-align: center;
+}
+aside {
+    display: flex;
+    flex: 1fr 2fr;
+    background-color: aquamarine;
+}
