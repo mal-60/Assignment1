@@ -1,14 +1,18 @@
 body {
     background-color: #F8E9D7;
 }
-header {
+
+section {
+    display: grid;
+    justify-content: end;
+}
+h1 {
     font-family: 'Montserrat', sans-serif;
     color: #4B7171;
     text-align: center;
 }
 div {
-    display: grid;
-    text-align: right;
+    /* display: grid; */
 }
 .dark-theme {
     border: 0;
@@ -44,12 +48,38 @@ div {
     background-color: #D9827C;
 }
 
-aside {
+.sidebar {
     display: flex;
-    justify-content: center;
-    height: 500px;
-    width: 400px;
+    flex-direction: column;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     font-family: 'Montserrat', sans-serif;
     color: #4B7171;
     background-color: #F9F3EC;
+    padding-top: 20px;
+}
+.sidebar p{
+    color: #4B7171;
+    font-family: 'Montserrat', sans-serif;
+}
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+footer {
+    font-family: 'Montserrat', sans-serif;
+    color: #4B7171;
+    text-align: right;
 }
