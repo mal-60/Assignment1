@@ -60,9 +60,8 @@ div {
     color: #4B7171;
     background-color: #F9F3EC;
 }
-.sidebar p{
-    color: #4B7171;
-    font-family: 'Montserrat', sans-serif;
+.sidebar h2 {
+    text-align: center;
 }
 textarea {
     font-size: .8rem;
