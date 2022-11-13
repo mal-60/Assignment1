@@ -1,19 +1,20 @@
 body {
     background-color: #F8E9D7;
+    margin-left: 400px;
 }
 
 section {
-    display: grid;
-    justify-content: end;
+    /* display: grid; */
+    justify-content: center;
 }
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: #4B7171;
     text-align: center;
 }
-div {
-    /* display: grid; */
-}
+/* .container-text {
+    display: grid;
+} */
 .dark-theme {
     border: 0;
     line-height: 3.0;
@@ -52,7 +53,7 @@ div {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 160px;
+    width: 250px;
     position: fixed;
     top: 0;
     left: 0;
@@ -78,5 +79,15 @@ textarea {
 footer {
     font-family: 'Montserrat', sans-serif;
     color: #4B7171;
-    text-align: right;
+    text-align: center;
+}
+.footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        background-color: #efefef;
+        text-align: center;
+      }
 }
