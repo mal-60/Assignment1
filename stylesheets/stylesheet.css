@@ -12,9 +12,10 @@ h1 {
     color: #4B7171;
     text-align: center;
 }
-/* .container-text {
-    display: grid;
-} */
+div.container-text {
+    /* display: grid; */
+    grid-template-rows: 1fr 4fr;
+}
 .dark-theme {
     border: 0;
     line-height: 3.0;
@@ -64,17 +65,18 @@ h1 {
 .sidebar h2 {
     text-align: center;
 }
+
 textarea {
     font-size: .8rem;
     letter-spacing: 1px;
 }
 textarea {
+    background-color: #F9F3EC;
     padding: 10px;
     max-width: 100%;
-    line-height: 1.5;
+    line-height: 2.5;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #999;
+    border: solid rgb(65, 144, 209);
 }
 footer {
     font-family: 'Montserrat', sans-serif;
