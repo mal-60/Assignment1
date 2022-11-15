@@ -19,6 +19,11 @@ body {
     text-align: center;
 }
 
+header p {
+    text-align: right;
+    margin-right: 10px;
+}
+
 div.container-text {
     padding-bottom: 20px;
 }
@@ -79,6 +84,7 @@ div.save-cancel {
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
     background-color: #D9827C;
+    margin-right: 10px;
 }
 
 footer {
