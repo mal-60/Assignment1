@@ -66,6 +66,7 @@ textarea {
 
 div.save-cancel {
     text-align: right;
+    padding-top: 20px;
 }
 
 .pink-theme {
@@ -79,4 +80,24 @@ div.save-cancel {
     border-radius: 10px;
     background-color: #D9827C;
 }
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    color: #4B7171;
+    text-align: center;
+    mix-blend-mode: multiply;
+    justify-content: center;
+}
+/* .footer {
+    position: absolute;
+    padding-left: 400px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #F8E9D7;
+    text-align: center;
+    display: inline-block;
+    mix-blend-mode: multiply;
+} */
 
