@@ -14,9 +14,34 @@ body {
     background-color: #F9F3EC;
     text-align: center;
 }
-
-
 .better-notes{
     display: grid;
     text-align: center;
+}
+
+div.container-text {
+    padding-bottom: 20px;
+}
+
+.dark-theme {
+    border: 0;
+    line-height: 3.0;
+    padding: 0 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #6f6a87;
+}
+.blue-theme {
+    border: 0;
+    line-height: 3.0;
+    padding: 0 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #5394a0;
 }
