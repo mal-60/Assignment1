@@ -2,7 +2,8 @@ body {
     background-color: #F8E9D7;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-    color: #4B7171;
+    /* color: #4B7171; */
+    color: #304F47;
 }
 
 .sidebar {
@@ -10,7 +11,8 @@ body {
     flex-direction: column;
     /* height: 100%; */
     width: 100%;
-    color: #4B7171;
+    /* color: #4B7171; */
+    color: #525252;
     background-color: #F9F3EC;
     text-align: center;
 }
@@ -94,6 +96,8 @@ footer {
     text-align: center;
     mix-blend-mode: multiply;
     justify-content: center;
+    position: relative;
+    top: 200px;
 }
 /* .footer {
     position: absolute;
