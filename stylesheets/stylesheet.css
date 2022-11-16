@@ -2,7 +2,6 @@ body {
     background-color: #F8E9D7;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-    /* color: #4B7171; */
     color: #304F47;
 }
 
@@ -10,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* color: #4B7171; */
     color: #525252;
     background-color: #F9F3EC;
     align-items: center;
@@ -46,7 +44,6 @@ div.container-text {
     line-height: 3.0;
     padding: 0 10px;
     font-size: 1rem;
-    text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
@@ -65,8 +62,6 @@ textarea {
     width: 95%;
     height: 150px;
     padding: 10px;
-    resize: none;
-    justify-content: center;
     margin: auto;
     display: block;
 }
@@ -81,7 +76,6 @@ div.save-cancel {
     line-height: 3.0;
     padding: 0 10px;
     font-size: 1rem;
-    text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
@@ -91,18 +85,14 @@ div.save-cancel {
 
 footer {
     font-family: 'Montserrat', sans-serif;
-    color: #4B7171;
+    color: #304F47;
     text-align: center;
     mix-blend-mode: multiply;
-    justify-content: center;
     position: relative;
     top: 200px;
 }
 
 @media screen and (min-width:600px) {
-    /* body{
-        margin-left: 25%;
-    } */
     main {
         margin-left: 25%;
     }
@@ -116,9 +106,7 @@ footer {
         font-family: 'Montserrat', sans-serif;
         color: #525252; ;
         background-color: #F9F3EC;
-        position: fixed!important;
-        z-index: 1;
-        overflow: auto;
+        position: fixed;
     }
 
     .sidebar h2 {
