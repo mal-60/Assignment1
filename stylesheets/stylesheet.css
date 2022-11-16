@@ -100,9 +100,29 @@ footer {
     top: 200px;
 }
 
-@media screen and (600px) {
+@media screen and (min-width:600px) {
+    /* body{
+        margin-left: 25%;
+    } */
+    main {
+        margin-left: 25%;
+    }
+
     .sidebar {
+        display: flex;
+        flex-direction: column;
         height: 100%;
+        width: 25%;
+        align-items: flex-start;
+        font-family: 'Montserrat', sans-serif;
+        color: #525252; ;
+        background-color: #F9F3EC;
+        position: fixed!important;
+        z-index: 1;
+        overflow: auto;
+    }
+    footer {
+        top: 350px;
     }
 }
 
