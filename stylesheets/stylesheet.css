@@ -9,13 +9,14 @@ body {
 .sidebar {
     display: flex;
     flex-direction: column;
-    /* height: 100%; */
     width: 100%;
     /* color: #4B7171; */
     color: #525252;
     background-color: #F9F3EC;
-    text-align: center;
+    /* text-align: center; */
+    align-items: center;
 }
+
 .better-notes{
     display: grid;
     text-align: center;
@@ -36,7 +37,6 @@ div.container-text {
     line-height: 3.0;
     padding: 0 10px;
     font-size: 1rem;
-    text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
@@ -99,16 +99,11 @@ footer {
     position: relative;
     top: 200px;
 }
-/* .footer {
-    position: absolute;
-    padding-left: 400px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #F8E9D7;
-    text-align: center;
-    display: inline-block;
-    mix-blend-mode: multiply;
-} */
+
+@media screen and (600px) {
+    .sidebar {
+        height: 100%;
+    }
+}
+
 
