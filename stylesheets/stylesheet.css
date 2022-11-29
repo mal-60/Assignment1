@@ -96,7 +96,6 @@ footer {
     main {
         margin-left: 25%;
     }
-
     .sidebar {
         display: flex;
         flex-direction: column;
@@ -108,13 +107,14 @@ footer {
         background-color: #F9F3EC;
         position: fixed;
     }
-
     .sidebar h2 {
         padding-left: 30px;
     }
-
     footer {
         top: 350px;
+    }
+    .dark {
+        background-color: #000;
     }
 }
 
