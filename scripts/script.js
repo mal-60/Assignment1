@@ -1,8 +1,8 @@
 const sideBar = document.querySelector(".sidebar");
-const betterNotes = document.querySelector(".better-notes");
 const blueButton = document.querySelector(".blue-theme");
 const darkButton = document.querySelector(".dark-theme");
-const saveCancel = document.querySelector(".save-cancel");
+const textArea = document.querySelector(".story");
+// const saveCancel = document.querySelector(".save-cancel");
 const pinkButton = document.querySelector(".pink-theme");
 
 
@@ -19,7 +19,11 @@ darkButton.addEventListener("click", textChange);
 
 function darkMode () {
     document.body.classList.toggle("dark");
-    sideBar.classList.toggle("darkSideBar");
+    sideBar.classList.toggle("dimSideBar");
+    blueButton.classList.toggle("dimBlueButton");
+    darkButton.classList.toggle("dimDarkButton");
+    textArea.classList.toggle("dimTextArea");
+    pinkButton.classList.toggle("dimPinkButton");
 }
 darkButton.addEventListener("click", darkMode);
 

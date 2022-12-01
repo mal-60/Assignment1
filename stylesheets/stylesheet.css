@@ -150,6 +150,21 @@ footer {
     .dark {
         background-color: rgb(45, 42, 42);
     }
+    .dimSideBar {
+        background-color: rgb(41, 39, 49);
+    }
+    .dimBlueButton {
+        background-color: rgb(18, 18, 64);
+    }
+    .dimDarkButton {
+        background-color: rgb(164, 164, 164);
+    }
+    .dimTextArea {
+        background-color: #686284;
+    }
+    .dimPinkButton {
+        background-color: palevioletred;
+    }
 }
 
 
