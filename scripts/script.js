@@ -1,9 +1,10 @@
 const sideBar = document.querySelector(".sidebar");
 const blueButton = document.querySelector(".blue-theme");
 const darkButton = document.querySelector(".dark-theme");
-const textArea = document.querySelector(".story");
+const textArea = document.querySelector("#story");
 // const saveCancel = document.querySelector(".save-cancel");
 const pinkButton = document.querySelector(".pink-theme");
+const footText = document.querySelector(".footer-text");
 
 
 function textChange () {
@@ -24,8 +25,12 @@ function darkMode () {
     darkButton.classList.toggle("dimDarkButton");
     textArea.classList.toggle("dimTextArea");
     pinkButton.classList.toggle("dimPinkButton");
+    footText.classList.toggle("dimFooter");
 }
 darkButton.addEventListener("click", darkMode);
 
 
-// darkButton.classList.toggle("dark");
+function hideTextAndBtn () {
+    pinkButton.classList.add("clearTextBtn");
+}
+pinkButton.addEventListener("click", hideTextAndBtn);

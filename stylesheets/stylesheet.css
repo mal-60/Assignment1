@@ -165,6 +165,12 @@ footer {
     .dimPinkButton {
         background-color: palevioletred;
     }
+    .clearTextBtn {
+        display: none;
+    }
+    .dimFooter {
+        color: #D9827C;
+    }
 }
 
 
