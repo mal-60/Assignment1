@@ -59,6 +59,16 @@ header {
     border-radius: 10px;
     background-color: #5394a0;
 }
+.navy-theme {
+    border: 0;
+    line-height: 3.0;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #5394a0;
+}
 
 .pink-theme {
     border: 0;
@@ -148,28 +158,33 @@ footer {
         top: 350px;
     }
     .dark {
-        background-color: rgb(45, 42, 42);
+        background-color: rgb(44, 44, 44);
+        color: #fff;
     }
     .dimSideBar {
         background-color: rgb(41, 39, 49);
+        color: white;
     }
     .dimBlueButton {
         background-color: rgb(18, 18, 64);
     }
     .dimDarkButton {
-        background-color: rgb(164, 164, 164);
+        background-color: rgb(255, 7, 131);
     }
     .dimTextArea {
         background-color: #686284;
     }
+    .dimNavyButton {
+        background-color: #5B98E7;
+    }
     .dimPinkButton {
-        background-color: palevioletred;
+        background-color: rgb(61, 255, 151);
     }
     .clearTextBtn {
         display: none;
     }
     .dimFooter {
-        color: #D9827C;
+        filter: invert(100%) brightness(200%);
     }
 }
 
