@@ -16,4 +16,12 @@ function textChange () {
 }
 darkButton.addEventListener("click", textChange);
 
+
+function darkMode () {
+    document.body.classList.toggle("dark");
+    sideBar.classList.toggle("darkSideBar");
+}
+darkButton.addEventListener("click", darkMode);
+
+
 // darkButton.classList.toggle("dark");
