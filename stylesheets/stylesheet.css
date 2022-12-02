@@ -143,6 +143,7 @@ footer {
     .sidebar {
         display: flex;
         flex-direction: column;
+        top: 0px;
         height: 100%;
         width: 20%;
         align-items: flex-start;
