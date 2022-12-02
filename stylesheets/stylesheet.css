@@ -108,7 +108,7 @@ footer {
     font-family: 'Montserrat', sans-serif;
     color: #304F47;
     text-align: center;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
     position: relative;
     top: 200px;
 }
@@ -184,7 +184,10 @@ footer {
         display: none;
     }
     .dimFooter {
-        filter: invert(100%) brightness(200%);
+        color: white;
+    }
+    .imgDark {
+        filter: invert(100%) brightness(300%);
     }
 }
 

@@ -2,10 +2,11 @@ const sideBar = document.querySelector(".sidebar");
 const blueButton = document.querySelector(".blue-theme");
 const darkButton = document.querySelector(".dark-theme");
 const textArea = document.querySelector("#story");
-// const saveCancel = document.querySelector(".save-cancel");
+const footerText = document.querySelector("h3");
 const navyButton = document.querySelector(".navy-theme");
 const pinkButton = document.querySelector(".pink-theme");
-const footText = document.querySelector(".footer-text");
+const footText = document.querySelector("#footer-text");
+const imageLogos = document.querySelectorAll("img");
 
 
 function textChange () {
@@ -27,19 +28,35 @@ function darkMode () {
     textArea.classList.toggle("dimTextArea");
     navyButton.classList.toggle("dimNavyButton");
     pinkButton.classList.toggle("dimPinkButton");
-    footText.classList.toggle("dimFooter");
+    footerText.classList.toggle("dimFooter");
+
+    for (let image of imageLogos) {
+        image.classList.toggle("imgDark");
+    };
 }
 darkButton.addEventListener("click", darkMode);
 
-
+// hides the textarea and button after clicking cancel button
 function hideTextAndBtn () {
-    pinkButton.classList.add("clearTextBtn");
-    navyButton.classList.add("clearTextBtn");
-    textArea.classList.add("clearTextBtn");
+    pinkButton.classList.toggle("clearTextBtn");
+    navyButton.classList.toggle("clearTextBtn");
+    textArea.classList.toggle("clearTextBtn");
 }
-pinkButton.classList.toggle("clearTextBtn");
-navyButton.classList.toggle("clearTextBtn");
-textArea.classList.toggle("clearTextBtn");
-
-
 pinkButton.addEventListener("click", hideTextAndBtn);
+
+
+// returns the text and button after clicking new note
+function returnTextAndBtn () {
+    if (navyButton.classList.contains("clearTextBtn")) 
+    {
+        hideTextAndBtn ()
+    }
+    else {
+        textArea.value = "";
+    }
+}
+blueButton.addEventListener("click", returnTextAndBtn);
+
+function clearTextArea () {
+    
+}
