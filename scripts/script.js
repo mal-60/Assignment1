@@ -8,6 +8,10 @@ const pinkButton = document.querySelector(".pink-theme");
 const footText = document.querySelector("#footer-text");
 const imageLogos = document.querySelectorAll("img");
 
+const notesArray = [
+    {title: "note one", body: "this is my first note"},
+    {title: "note two", body: "this is my second note"}
+];
 
 function textChange () {
     if (darkButton.textContent === "Dark Theme") {
@@ -57,6 +61,12 @@ function returnTextAndBtn () {
 }
 blueButton.addEventListener("click", returnTextAndBtn);
 
-function clearTextArea () {
-    
+
+
+
+function saveText () {
+    input = prompt("What is the title of the note?");
+    // {title: input, body: textArea.value}
 }
+
+navyButton.addEventListener("click", saveText);

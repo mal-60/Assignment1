@@ -157,6 +157,10 @@ footer {
     footer {
         top: 350px;
     }
+    a {
+        display: inline-block;
+    }
+
     .dark {
         background-color: rgb(44, 44, 44);
         color: #fff;
