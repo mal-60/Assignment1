@@ -24,12 +24,14 @@ header {
     margin-right: 10px;
 }
 
-/* div.container-text {
-    padding-bottom: 20px;
-    margin-left: 10px;
-} */
+.container-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
 
-.all-buttons {
+button {
     border: 0;
     line-height: 3.0;
     padding: 0 10px;
@@ -40,52 +42,29 @@ header {
 }
 
 .dark-theme {
-    border: 0;
-    line-height: 3.0;
-    padding: 0 10px;
-    font-size: 1rem;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
     background-color: #6f6a87;
 }
 .blue-theme {
-    border: 0;
-    line-height: 3.0;
-    padding: 0 10px;
-    font-size: 1rem;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
     background-color: #5394a0;
 }
 .navy-theme {
-    border: 0;
-    line-height: 3.0;
-    padding: 0 10px;
-    font-size: 1rem;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
     background-color: #5394a0;
 }
-
 .pink-theme {
-    border: 0;
-    line-height: 3.0;
-    padding: 0 10px;
-    font-size: 1rem;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
     background-color: #D9827C;
-    margin-right: 10px;
+}
+
+.save-cancel {
+    grid-row: 1;
+    text-align: right;
+    padding-top: 10px;
 }
 
 textarea {
     font-size: .8rem;
     letter-spacing: 1px;
 }
+
 textarea {
     background-color: #F9F3EC;
     border-color: #5B98E7; 
@@ -98,17 +77,10 @@ textarea {
     display: block;
 }
 
-/* div.save-cancel {
-    display: flex;
-    justify-content: right;
-    padding-top: 20px;
-} */
-
 footer {
     font-family: 'Montserrat', sans-serif;
     color: #304F47;
     text-align: center;
-    /* mix-blend-mode: multiply; */
     position: relative;
     top: 200px;
 }
@@ -123,21 +95,9 @@ footer {
         margin-left: 20%;
     }
 
-    .container-text {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 10px;
-    }
-
     .text-area {
         grid-row: 1;
         padding-bottom: 10px;
-    }
-    
-    .save-cancel {
-        grid-row: 1;
-        text-align: right;
     }
 
     .sidebar {
@@ -152,12 +112,15 @@ footer {
         background-color: #F9F3EC;
         position: fixed;
     }
+
     .sidebar h1 {
         padding-left: 30px;
     }
+
     footer {
         top: 350px;
     }
+
     a {
         display: inline-block;
     }
