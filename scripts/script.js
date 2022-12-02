@@ -1,4 +1,5 @@
 const sideBar = document.querySelector(".sidebar");
+const sideBarList = document.querySelector(".sidebar-list");
 const blueButton = document.querySelector(".blue-theme");
 const darkButton = document.querySelector(".dark-theme");
 const textArea = document.querySelector("#story");
@@ -13,6 +14,7 @@ const notesArray = [
     {title: "note two", body: "this is my second note"}
 ];
 
+// change text of dark theme button to light theme and back
 function textChange () {
     if (darkButton.textContent === "Dark Theme") {
         darkButton.textContent = "Light Theme";
@@ -24,6 +26,7 @@ function textChange () {
 darkButton.addEventListener("click", textChange);
 
 
+// change to dark mode with click of dark theme button and toggle
 function darkMode () {
     document.body.classList.toggle("dark");
     sideBar.classList.toggle("dimSideBar");
@@ -75,12 +78,12 @@ function saveText () {
     )
     const listItem = document.createElement("li");
     listItem.textContent = input;
-    sideBar.appendChild(listItem);
+    sideBarList.appendChild(listItem);
 }
 navyButton.addEventListener("click", saveText);
 
 
-
+// displays the notes by clicking title
 function displayText (event) {
     for (let note of notesArray) {
         if (note.title == event.target.textContent) {
