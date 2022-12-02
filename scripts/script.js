@@ -63,10 +63,29 @@ blueButton.addEventListener("click", returnTextAndBtn);
 
 
 
-
+// saves text and adds title
 function saveText () {
+    let input = ""
     input = prompt("What is the title of the note?");
-    // {title: input, body: textArea.value}
+    notesArray.push(
+        {
+            title: input,
+            body: textArea.value
+        }
+    )
+    const listItem = document.createElement("li");
+    listItem.textContent = input;
+    sideBar.appendChild(listItem);
 }
-
 navyButton.addEventListener("click", saveText);
+
+
+
+function displayText (event) {
+    for (let note of notesArray) {
+        if (note.title == event.target.textContent) {
+            textArea.value = note.body;
+        }
+    }
+}
+sideBar.addEventListener("click", displayText);
