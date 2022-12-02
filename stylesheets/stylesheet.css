@@ -161,39 +161,37 @@ footer {
     a {
         display: inline-block;
     }
-
-    .dark {
-        background-color: rgb(44, 44, 44);
-        color: #fff;
-    }
-    .dimSideBar {
-        background-color: rgb(41, 39, 49);
-        color: white;
-    }
-    .dimBlueButton {
-        background-color: rgb(18, 18, 64);
-    }
-    .dimDarkButton {
-        background-color: rgb(255, 7, 131);
-    }
-    .dimTextArea {
-        background-color: #686284;
-    }
-    .dimNavyButton {
-        background-color: #5B98E7;
-    }
-    .dimPinkButton {
-        background-color: rgb(61, 255, 151);
-    }
-    .clearTextBtn {
-        display: none;
-    }
-    .dimFooter {
-        color: white;
-    }
-    .imgDark {
-        filter: invert(100%) brightness(300%);
-    }
 }
 
-
+.dark {
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+}
+.dimSideBar {
+    background-color: rgb(41, 39, 49);
+    color: white;
+}
+.dimBlueButton {
+    background-color: rgb(18, 18, 64);
+}
+.dimDarkButton {
+    background-color: rgb(255, 7, 131);
+}
+.dimTextArea {
+    background-color: #686284;
+}
+.dimNavyButton {
+    background-color: #5B98E7;
+}
+.dimPinkButton {
+    background-color: rgb(61, 255, 151);
+}
+.clearTextBtn {
+    display: none;
+}
+.dimFooter {
+    color: white;
+}
+.imgDark {
+    filter: invert(100%) brightness(300%);
+}
